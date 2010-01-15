@@ -9,7 +9,7 @@ my $class = Module::Build->subclass( code => <<'EOF');
                 die("requires Locale::Msgfmt") if(! $INC{'Locale/Msgfmt.pm'});
                 msgfmt({
                         in => "share/locale/",
-                        out => "blib/lib/Acme/Padre/PlayCode/share/locale/"});
+                        out => "blib/share/locale/"});
         }
 EOF
 my $builder = $class->new(
@@ -30,7 +30,7 @@ my $builder = $class->new(
     meta_merge     => {
         resources => {
             homepage   => 'http://padre.perlide.org/',
-            repository => 'http://svn.perlide.org/padre/trunk/Acme-Plugin-PlayCode/',
+            repository => 'http://svn.perlide.org/padre/trunk/Acme-Padre-PlayCode/',
         }
     },
 );

@@ -1,27 +1,27 @@
 ---
-name: Acme-Padre-PlayCode
-version: 0.12
+abstract: 'L<Acme::PlayCode> Plugin for L<Padre>'
 author:
   - 'Fayland Lam <fayland@gmail.com>'
-abstract: 'L<Acme::PlayCode> Plugin for L<Padre>'
-license: perl
-resources:
-  homepage: http://padre.perlide.org/
-  license: http://dev.perl.org/licenses/
-  repository: http://svn.perlide.org/padre/trunk/Acme-Plugin-PlayCode/
 build_requires:
   Locale::Msgfmt: 0.14
   Test::More: 0
-requires:
-  Acme::PlayCode: 0
-  Padre: 0.43
 configure_requires:
-  Module::Build: 0.34
-provides:
-  Acme::Padre::PlayCode:
-    file: lib/Acme/Padre/PlayCode.pm
-    version: 0.12
-generated_by: Module::Build version 0.34
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3601'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
+name: Acme-Padre-PlayCode
+provides:
+  Acme::Padre::PlayCode:
+    file: lib/Acme/Padre/PlayCode.pm
+    version: 0.13
+requires:
+  Acme::PlayCode: 0
+  Padre: 0.43
+resources:
+  homepage: http://padre.perlide.org/
+  license: http://dev.perl.org/licenses/
+  repository: http://svn.perlide.org/padre/trunk/Acme-Padre-PlayCode/
+version: 0.13
